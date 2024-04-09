@@ -1,0 +1,178 @@
+:root {
+  --color-fondo: #ffffff;
+  --color-nav: #f5f5f5;
+  --color-text: #342f32;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+a {
+  /* todos los enlases tienen este color de letra y una transicion cuando se pasa el cursor encima  */
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+a:hover {
+  opacity: 0.75;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden; /* elimina la barra de desplazamiento en x para cuando las imagenes no caben  */
+  color: var(--color-text);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5;
+}
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  line-height: 1.6; /* espacio que hay entre lineas de texto */
+}
+
+body {
+  background-color: var(--color-fondo);
+}
+header {
+  margin: 0;
+  font-size: 3.5vw;
+  position: sticky;
+  top: 0;
+  background-color: azure;
+  z-index: 999;
+}
+
+header a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+
+header a:hover {
+  font-size: 2rem;
+}
+
+.catalogos {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.catalogos figcaption {
+  text-align: center;
+}
+
+.verCatalogo {
+  display: inline-block;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+}
+
+.verCatalogo:hover {
+  font-size: 1.5rem;
+}
+.descargarCatalogo {
+  cursor: pointer;
+  transition: color ease-in-out 0.4s;
+}
+
+.descargarCatalogo:hover {
+  color: red;
+}
+
+.pdf {
+  display: flex;
+  justify-content: center;
+}
+.pdf iframe {
+  width: 80%;
+  height: 400px;
+}
+
+.none {
+  display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input,
+.form textarea {
+  width: 80%;
+  margin-top: 2rem;
+  padding: 0.15rem;
+  resize: none;
+}
+
+header nav {
+  background-color: var(--color-nav);
+}
+
+.contacto {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.contacto h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contacto nav {
+  background-color: #3a78fd;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3vw;
+}
+
+.contacto a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  background-color: var(--color-nav);
+}

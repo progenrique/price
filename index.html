@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pedidos</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogos">Catalogos</a>
+        <a href="#form">Pedidos</a>
+        <a href="">Contactame</a>
+      </nav>
+    </header>
+    <main id="inicio">
+      <section class="pdf none">
+        <iframe src="" frameborder="0"></iframe>
+      </section>
+      <section>
+        <article class="catalogos" id="catalogos"></article>
+      </section>
+      <section>
+        <form
+          class="form"
+          id="form"
+          action="https://formsubmit.co/cervantes.enri.0201@gmail.com"
+          method="POST">
+          <h3>Realiza tu pedido</h3>
+          <p>
+            <strong> Dejame tus datos y me pondre en contacto contigo </strong>
+          </p>
+          <input
+            type="text"
+            placeholder="Id de los productos"
+            name="id"
+            required />
+          <input
+            type="text"
+            placeholder="Ingresa tu nombre"
+            name="nombre"
+            required />
+          <input
+            required
+            type="text"
+            placeholder="Ingresa tu telefono"
+            name="telefono" />
+          <textarea
+            name="comentarios"
+            id="comentarios "
+            cols="30"
+            rows="10"
+            placeholder="comentarios"></textarea>
+          <input type="submit" />
+        </form>
+      </section>
+      <section class="contacto">
+        <h3>CONTACTAME CON UN SOLO CLICK</h3>
+        <nav>
+          <a
+            href="https://wa.me/5591004288?text=Hola%2C%20este%20es%20un%20mensaje%20de%20prueba."
+            target="_blank"
+            rel="noopener"
+            >Enviame un whatsapp</a
+          >
+          <a href="tel:+525591004288">Llamame</a>
+        </nav>
+      </section>
+    </main>
+    <footer>
+      <small>Sitio creado por Enrique cervantes</small>
+    </footer>
+    <template id="template">
+      <figure>
+        <img src="" alt="" />
+        <figcaption>
+          <div class="verCatalogo">Ver</div>
+          <div class="descargarCatalogo">Descargar</div>
+        </figcaption>
+      </figure>
+    </template>
+  </body>
+  <script src="/index.js"></script>
+</html>
