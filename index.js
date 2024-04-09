@@ -87,8 +87,6 @@ const catalogos = [
   },
 ];
 
-console.log("empezamos");
-
 const $template = document.getElementById("template").content,
   $fragment = document.createDocumentFragment(),
   $catalogos = document.querySelector(".catalogos"),
@@ -96,6 +94,7 @@ const $template = document.getElementById("template").content,
 
 catalogos.forEach((el) => {
   $template.querySelector("img").setAttribute("src", el.imagen);
+  $template.querySelector("img").setAttribute("data-url", el.catalogo);
   $template.querySelector(".verCatalogo").setAttribute("data-url", el.catalogo);
   $template
     .querySelector(".descargarCatalogo")
@@ -118,7 +117,10 @@ document.addEventListener("click", (e) => {
     });
   }
 
-  if (e.target.matches(".descargarCatalogo")) {
+  if (
+    e.target.matches(".descargarCatalogo") ||
+    e.target.matches(".catalogos img")
+  ) {
     let enlace = e.target.getAttribute("data-url");
 
     let enlaceDescarga = document.createElement("a");

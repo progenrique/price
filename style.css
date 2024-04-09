@@ -116,16 +116,13 @@ header nav {
   transition: all ease-in-out 0.4s;
 }
 
-.verCatalogo:hover {
-  font-size: 1.5rem;
+.verCatalogo:hover,
+.descargarCatalogo:hover {
+  color: #3a78fd;
 }
 .descargarCatalogo {
   cursor: pointer;
   transition: color ease-in-out 0.4s;
-}
-
-.descargarCatalogo:hover {
-  color: #3a78fd;
 }
 
 .pdf {
@@ -184,15 +181,23 @@ header nav {
   margin-bottom: 1rem;
 }
 .contacto nav {
-  background-color: #3a78fd;
   color: white;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
   font-size: var(--step-3);
 }
 
 .contacto a {
   text-decoration: none;
+  margin-top: 1rem;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+.tel {
+  background-color: #3a78fd;
 }
 
 footer {
@@ -204,5 +209,13 @@ footer {
 @media screen and (max-width: 800px) {
   .verCatalogo {
     display: none;
+  }
+
+  .descargarCatalogo {
+    display: none;
+  }
+
+  .catalogos img {
+    cursor: pointer;
   }
 }
